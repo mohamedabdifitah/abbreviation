@@ -1,5 +1,5 @@
 {
-  "name": "abbreviation",
+  "name": "@jalato/abbreviate",
   "version": "1.0.0",
   "description": "abbreviation is libary is used to shorten number to understable string",
   "main": "app.js",
