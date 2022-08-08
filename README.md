@@ -23,3 +23,16 @@ abbreviate(1234567,false,2)
 ```js 
 import abbreviate from "@jalato/abbreviate";
 ```
+### arguments 
+
+```js 
+// takes 3 arguments abbreviate(number,maxPlace,forPlace,forceLetter)
+/*
+  { 
+     number:Number,
+     maxPlace:number | Boolean,
+     forcePlace:number | Boolean,
+     forceLetter:number | Boolean
+  }
+*/
+abbreviate(number,Boolean,Boolean,Boolean)
