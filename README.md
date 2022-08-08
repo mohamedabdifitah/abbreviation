@@ -19,3 +19,7 @@ import abbreviate from "@jalato/abbreviate";
 abbreviate(1234567,false,2)
 
 ```
+### importing
+```js 
+import abbreviate from "@jalato/abbreviate";
+```
