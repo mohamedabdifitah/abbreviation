@@ -79,3 +79,18 @@ abbreviate(1248000, 3, 3, 'M')
 abbreviate(248000, 3, 3, 'M')
 */
 
+/*
+    solution from stackoverflow https://stackoverflow.com/questions/15900485/correct-way-to-convert-size-in-bytes-to-kb-mb-gb-in-javascript
+*/
+export const byteConversion = (bytes, decimals = 2) => {
+  if (bytes === 0) return '0 B';
+  
+  const kiloByte = 1000;
+  const decimal = decimals < 0 ? 0 : decimals;
+  const sizes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+  
+  const i = Math.floor(Math.log(bytes) / Math.log(kiloByte));
+  
+  return `${parseFloat((bytes / kiloByte ** i).toFixed(decimal))} ${sizes[i]}`;   
+}
+// console.log(byteConversion(1580))
