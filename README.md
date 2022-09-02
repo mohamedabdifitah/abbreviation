@@ -36,3 +36,10 @@ import abbreviate from "@jalato/abbreviate";
   }
 */
 abbreviate(number,Boolean,Boolean,Boolean)
+```
+### bytes conversion part
+```js
+import { byteConversion } from "@jalato/abbreviate";
+const Data = byteConversion(1580)
+console.log(Data)
+// 1.58 KB
